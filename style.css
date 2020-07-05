@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+
+body	{font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
+
+/* ヘッダー */
+.site h1 a	{color: #000000;
+	text-decoration: none}
+
+.site h1	{margin: 0;
+    font-size: 30px}
+
+.login      {padding-right: 10px;}
+.user       {padding-right: 10px;}
+
+.login a    {color: #000000;
+    text-decoration: none;
+    font-size: 25px}
+
+.user a    {color: #000000;
+    text-decoration: none;
+    font-size: 25px}
+
+/* ナビゲーション */
+.menu ul	{margin: 0;
+	padding: 0;
+	list-style: none}
+
+.menu li a	{display: block;
+	padding: 10px;
+	color: #000000;
+	font-size: 14px;
+	text-decoration: none}
+
+.menu li a:hover	{background-color: #eeeeee}
+
+/* ニュース */
+.center         {
+    padding: 10px;
+}
+
+.content        {
+    padding-left: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;}
+
+.news h1 ,.headline h1   {
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.content h1     {
+    margin-top: 5px;
+    font-size: 22px;}
+    
+
+/* ########### 768px以上 ########### */
+@media (min-width: 768px) {
+
+/* BOX1とBOX2を横に並べる設定 */
+.boxA:after	{content: "";
+	display: block;
+	clear: both}
+
+.box1	{float: left;
+	width: 50%}
+
+.box2	{float: left;
+    width: 50%}
+    
+.box2:after	{content: "";
+	display: block;
+    clear: both}
+
+.user  {float: right;
+    width: 80px}
+
+.login  {float: right;
+    width: 100px}
+
+.boxB:after	{content: "";
+	display: block;
+    clear: both}
+    
+.box3   {float: left;
+    width: 250px;}
+.boxC   {float: none;
+    width: auto;
+    margin-left: 250px;}
+
+.boxC:after	{content: "";
+	display: block;
+    clear: both}
+
+.box4   {float: left;
+    width: 60%;}
+.boxD   {float: left;
+    width: 40%;}
+
+.boxD:after	{content: "";
+	display: block;
+    clear: both}
+
+}
+
